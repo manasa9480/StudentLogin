@@ -27,7 +27,7 @@ public class StudentController {
 
     @PutMapping("/{studentName}")
     public void updateStudent(@PathVariable String studentName, @RequestBody Student student) {
-        // Set the name of the student to be updated
+        
         student.setName(studentName);
         studentService.updateStudent(student);
     }
